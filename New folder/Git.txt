@@ -1,5 +1,43 @@
-GITHUB related commands
+Git Bash (File and Directory Operations Commands)
+-------------------------------------------------
+pwd - present work directory
+ls
+ls -a (a means all)
+mkdir - (make directory)
+    Ex: mkdir Demo
 
+cd (change directory) - child directory
+touch file.txt (file creation)
+Syntax: touch [options] file_name
+
+touch file.txt file2.txt (multiple file creation at once)
+nano file.txt (access file/edit)
+ctrl+x (close file)/prompted for yes /no for saving data)
+cat file.txt (display content) (cat shot for concatenate) (link to study topic in detail)
+
+cd .. (move to parent). cd <filepath> (to move to specific path)
+rm file.txt (remove file)
+rm -r (remove folder)
+mv file/child_folder name
+    Syntax: mv [options(s)] [source_file_name(s)] [Destination_file_name]
+    Can also be used to rename a file or folder
+
+grep
+Link
+Full form: global regular expression print
+Used to search content in a file
+
+"|" (for combining commands)
+    cat filename | grep "search data"
+
+print first 10 details in csv file
+head data.csv (displays starting 10 rows of the file)
+tails data.csv (displays ending 3 rows of the file)
+
+//------------------------------------------------
+
+GITHUB related commands
+-----------------------
 Initialization and Configuration Commands: 
 git init: Initializes a new Git repository. 
 git remote add origin <repo-link>: Associates the local repository with a remote repository (usually hosted on platforms like GitHub).   
