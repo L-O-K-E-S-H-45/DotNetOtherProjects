@@ -1,0 +1,150 @@
+GITHUB related commands
+
+Initialization and Configuration Commands: 
+git init: Initializes a new Git repository. 
+git remote add origin <repo-link>: Associates the local repository with a remote repository (usually hosted on platforms like GitHub).   
+Status and Inspection Commands: 
+git status: Displays the state of the working directory and staging area. 
+git log: Shows commit history for the current branch.   
+Staging and Commit Commands: 
+git add demo.txt: Stages changes in demo.txt for the next commit. 
+git commit -m "Added: demo.txt file": Creates a new commit with the staged changes.   
+Branch Management Commands: 
+git branch: Lists all branches. 
+git checkout -b UC1: Creates a new branch named UC1 and switches to it. 
+git checkout -b UC2: Creates a new branch named UC2 and switches to it. 
+git branch -d UC2: Deletes the UC2 branch. 
+git branch -m UC1 DemoUc1: Renames the UC1 branch to DemoUc1. 
+git merge UC1: Merges changes from UC1 into the current branch. 
+git push origin --delete uc2: Deletes the uc2 branch on the remote repository.   
+File Creation and Editing Commands: 
+touch demo2.txt: Creates a new file named demo2.txt. 
+nano demo2.txt: Accesses and edits the content of demo2.txt.   
+Pushing Changes to Remote Repository: 
+git push origin master: Pushes committed changes to the remote repository’s master branch. 
+git push origin UC1: Pushes changes from the local UC1 branch to the remote repository.   
+________________________________________________________________________________
+Git branch switching mistakes to avoid:
+Changes carry over: If you switch branches before committing changes, the changes will follow you to the new branch. 
+Commit before switching: Always commit your changes before switching branches to keep changes isolated in each branch. 
+Sequence of operations: Make changes -> Commit changes -> Switch branches. 
+Merging: If you want to incorporate changes from one branch into another, use the merge command.
+________________________________________________________________________________
+Practice commands in this order
+08 git init (init means initialization)
+09 git remote add origin repo-link
+10 git init
+11 git status
+12 git add demo.txt
+13 git status
+14 git commit -m "Added : demo.txt file"
+15 git branch
+16 git push origin master
+17 history
+18 git branch
+19 git checkout -b UC1
+20 git branch
+21 touch demo2.txt
+22 nano demo2.txt
+23 ls
+24 git add demo2.txt
+25 git commit -m "Added : demo2.txt file"
+26 git branch
+27 git push origin UC1
+28 git checkout master
+29 git merge UC1
+30 git push origin master
+31 history
+32 git checkout -b UC2
+33 --delete UC2
+34 git branch --delete UC2
+35 git branch -d UC2
+36 git checkout master
+37 git branch -d UC2
+38 git branch
+39 git branch -m UC1 DemoUc1
+40 git log
+41 Command to delete branch in git hub: git push origin --delete uc2
+
+//--------------------------------------------------
+
+// 22-4-2024
+
+hist
+LENOVO@DESKTOP-4OR4SUH MINGW64 /f/DotNet/DotNetProjects/FirstFroject (development)
+$ history
+    1  cd
+    2  ls
+    3  pwd
+    4  cd d:
+    5  ls
+    6  cd f:
+    7  ls
+    8  cd DotNet/
+    9  l
+   10  ls
+   11  git init
+   12  ls
+   13  ls -a
+   14  git remote add origin https://github.com/L-O-K-E-S-H-45/FirstDotNetProject.git
+   15  git pull origin main
+   16  ls
+   17  ls -a
+   18  git status
+   19  git status
+   20  git status
+   21  git add .
+   22  git commit -m "[LOKESH] Adding all the project code created till 22-4-2024"
+   23  git config --global user.email "lokeshjamadar45.com"
+   24  git config --global user.name "L-O-K-E-S-H-45"
+   25  git commit -m "[LOKESH] Adding all the project code created till 22-4-2024"
+   26  git status
+   27  git push origin main
+   28  git status
+   29  git add .
+   30  git status
+   31  git commit -m "[LOKESH] testing git push"
+   32  git push
+   33  git push origin main
+   34  git status
+   35  git add .
+   36  git status
+   37  git commit -m "[LOKESH] adding test file"
+   38  git push origin main
+   39  exit
+   40  git branch all
+   41  git branch a
+   42  git branch -a
+   43  git status
+   44  git add .
+   45  git status
+   46  git commit -m "[LOKESH] deleted test.cs file"
+   47  git branch -b development
+   48  git checkout -b development
+   49  git branch
+   50  git add .
+   51  git commit -m "[LOKESH] first commit in development branch"
+   52  git push origin development
+   53  git checkout main
+   54  git merge development
+   55  git push origin main
+   56  history
+   57  git checkout development
+   58  exit
+   59  git status
+   60  history
+   61  history
+
+LENOVO@DESKTOP-4OR4SUH MINGW64 /f/DotNet/DotNetProjects/FirstFroject (development)
+$ 
+
+
+
+
+
+
+
+
+
+
+
